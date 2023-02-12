@@ -42,7 +42,11 @@ jobs:
         with:
           token: ${{ github.token }}
           filters: .github/static-viz-file-paths.yaml
-
+  print-outputs:
+    needs: files-changed
+    runs-on: ubuntu-20.04
+    steps:
+      - run: echo ${{needs.files-changed.outputs.backend_all}}
   be-linter-cloverage:
     needs: files-changed
     if: github.event.pull_request.draft == false && needs.files-changed.outputs.backend_all == 'true'
