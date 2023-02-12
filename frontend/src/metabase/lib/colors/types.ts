@@ -8,3 +8,5 @@ export interface AccentColorOptions {
   dark?: boolean;
   harmony?: boolean;
 }
+
+export const foo = "bar";

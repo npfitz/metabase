@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-20.04
     timeout-minutes: 10
     outputs:
-      backend_all: ${{ steps.changes.outputs.backend_all || steps.static-viz-changes.outputs.static_viz_sources}}
+      backend_all: ${{ steps.changes.outputs.backend_all == 'true' || steps.static-viz-changes.outputs.static_viz_sources == 'true'}}
     steps:
       - uses: actions/checkout@v3
       - name: Test which files changed
