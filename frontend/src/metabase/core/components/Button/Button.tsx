@@ -32,6 +32,7 @@ const BUTTON_VARIANTS = [
   "borderless",
   "onlyIcon",
   "fullWidth",
+  "noWidth",
 ] as const;
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -66,6 +67,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   borderless?: boolean;
   onlyIcon?: boolean;
   fullWidth?: boolean;
+  noWidth?: boolean;
   onlyText?: boolean;
 }
 
