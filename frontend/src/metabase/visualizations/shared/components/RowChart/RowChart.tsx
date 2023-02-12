@@ -242,31 +242,33 @@ export const RowChart = <TDatum,>({
   );
 
   return (
-    <RowChartView
-      style={style}
-      isStacked={stackOffset != null}
-      seriesData={seriesData}
-      innerHeight={innerHeight}
-      innerWidth={innerWidth}
-      margin={margin}
-      theme={theme}
-      width={width}
-      height={height}
-      xScale={paddedXScale}
-      yScale={yScale}
-      goal={rowChartGoal}
-      hoveredData={hoveredData}
-      yTickFormatter={yTickFormatter}
-      xTickFormatter={xTickFormatter}
-      labelsFormatter={labelsFormatter}
-      xTicks={xTicks}
-      labelledSeries={labelledSeries}
-      yLabel={yLabel}
-      xLabel={xLabel}
-      hasXAxis={hasXAxis}
-      hasYAxis={hasYAxis}
-      onClick={onClick}
-      onHover={onHover}
-    />
+    <span>
+      <RowChartView
+        style={style}
+        isStacked={stackOffset != null}
+        seriesData={seriesData}
+        innerHeight={innerHeight}
+        innerWidth={innerWidth}
+        margin={margin}
+        theme={theme}
+        width={width}
+        height={height}
+        xScale={paddedXScale}
+        yScale={yScale}
+        goal={rowChartGoal}
+        hoveredData={hoveredData}
+        yTickFormatter={yTickFormatter}
+        xTickFormatter={xTickFormatter}
+        labelsFormatter={labelsFormatter}
+        xTicks={xTicks}
+        labelledSeries={labelledSeries}
+        yLabel={yLabel}
+        xLabel={xLabel}
+        hasXAxis={hasXAxis}
+        hasYAxis={hasYAxis}
+        onClick={onClick}
+        onHover={onHover}
+      />
+    </span>
   );
 };
