@@ -74,7 +74,7 @@ jobs:
       fail-fast: false
       matrix:
         java-version: [11]
-        edition: [ee]
+        edition: [oss]
         folder:
           - "admin"
           - "binning"
